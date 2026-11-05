@@ -14,44 +14,64 @@
 <meta property="og:title" content="La Ruta Creativa | Agencia de Publicidad y Marketing Digital">
 <meta property="og:description" content="Contenido que no parece anuncios y vende. Escríbenos por WhatsApp.">
 <meta property="og:url" content="https://larutacreativa.com/bio/lrc/">
-<meta property="og:image" content="https://larutacreativa.com/bio/lrc/assets/logo.jpg">
+<meta property="og:image" content="https://larutacreativa.com/bio/lrc/assets/logo.png">
+<meta property="og:image:type" content="image/png">
 <meta property="og:image:width" content="512">
 <meta property="og:image:height" content="512">
 <meta name="twitter:card" content="summary">
-<link rel="icon" href="assets/favicon-32.jpg" sizes="32x32">
-<link rel="icon" href="assets/icon-192.jpg" sizes="192x192">
-<link rel="apple-touch-icon" href="assets/icon-192.jpg">
+<link rel="icon" href="assets/favicon-32.png" sizes="32x32">
+<link rel="icon" href="assets/icon-192.png" sizes="192x192">
+<link rel="apple-touch-icon" href="assets/icon-192.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
 <style>
-:root{--navy:#212C3D;--navy2:#2a3850;--turq:#00C2CB;--yellow:#FFC700;--light:#F5F5F7;--pink:#E8336E}
+:root{--navy:#212C3D;--deep:#18212F;--turq:#00C2CB;--yellow:#FFC700;--light:#F5F5F7;--pink:#E8336E}
 *{box-sizing:border-box;margin:0;padding:0}
-html,body{min-height:100%}
-body{font-family:Nunito,Helvetica,Arial,sans-serif;color:var(--light);background:var(--navy);
- background-image:radial-gradient(circle at 15% 0%,rgba(0,194,203,.18),transparent 45%),radial-gradient(circle at 100% 100%,rgba(255,199,0,.12),transparent 40%);
- min-height:100vh;-webkit-font-smoothing:antialiased}
-.wrap{max-width:480px;margin:0 auto;padding:40px 20px calc(28px + env(safe-area-inset-bottom));display:flex;flex-direction:column;align-items:center;text-align:center}
-.logo{width:112px;height:112px;border-radius:50%;border:3px solid var(--yellow);box-shadow:0 0 0 6px rgba(0,194,203,.25);object-fit:cover}
-h1{font-family:Poppins,sans-serif;font-weight:800;font-size:1.6rem;margin-top:16px;letter-spacing:.2px}
-.tagline{font-size:1rem;opacity:.9;margin-top:6px;line-height:1.4;max-width:340px}
-.claim{display:inline-block;margin-top:14px;font-family:Poppins,sans-serif;font-weight:600;font-size:.84rem;color:var(--navy);background:var(--yellow);padding:6px 14px;max-width:100%;border-radius:999px}
-.links{width:100%;margin-top:28px;display:flex;flex-direction:column;gap:12px}
-.btn{display:flex;align-items:center;justify-content:center;gap:10px;width:100%;min-height:56px;padding:14px 18px;border-radius:16px;
- font-family:Poppins,sans-serif;font-weight:600;font-size:1rem;text-decoration:none;color:var(--light);
- background:rgba(245,245,247,.07);border:1.5px solid rgba(245,245,247,.18);transition:transform .15s,background .15s,border-color .15s}
-.btn:hover,.btn:focus-visible{transform:translateY(-2px);border-color:var(--turq);background:rgba(0,194,203,.12);outline:none}
-.btn-main{background:var(--turq);border-color:var(--turq);color:var(--navy);font-weight:700;font-size:1.08rem;min-height:62px;box-shadow:0 8px 24px rgba(0,194,203,.35)}
-.btn-main:hover,.btn-main:focus-visible{background:#19d3db;color:var(--navy)}
-.btn svg{width:22px;height:22px;flex:none}
-.label{margin-top:22px;margin-bottom:-2px;font-size:.78rem;letter-spacing:2px;text-transform:uppercase;opacity:.65;font-weight:700}
-.social{display:flex;flex-wrap:wrap;justify-content:center;gap:12px;margin-top:30px}
-.social a{width:46px;height:46px;border-radius:50%;display:grid;place-items:center;color:var(--light);background:rgba(245,245,247,.08);border:1.5px solid rgba(245,245,247,.15);transition:.15s}
+body{font-family:Nunito,Helvetica,Arial,sans-serif;color:var(--light);background:var(--deep);-webkit-font-smoothing:antialiased}
+a{color:inherit}
+.wrap{max-width:480px;margin:0 auto;position:relative}
+header{position:relative;padding:28px 20px 22px;text-align:center;overflow:hidden;background:linear-gradient(180deg,#14304a 0%,var(--navy) 55%,var(--deep) 100%)}
+.scene{position:absolute;inset:0;width:100%;height:100%;z-index:0;pointer-events:none}
+header>*:not(.scene){position:relative;z-index:1}
+header:after{content:"";position:absolute;left:0;right:0;bottom:0;height:70px;background:linear-gradient(180deg,transparent,var(--deep));z-index:0;pointer-events:none}
+.logo{width:96px;height:96px;border-radius:50%;box-shadow:0 0 0 3px rgba(0,194,203,.6),0 10px 30px rgba(0,0,0,.4),0 0 36px rgba(0,194,203,.35);display:block;margin:0 auto}
+h1{font-family:Poppins,sans-serif;font-weight:800;font-size:1.65rem;margin-top:12px;text-shadow:0 2px 12px rgba(0,0,0,.4)}
+.tag{font-size:.98rem;line-height:1.4;margin:4px auto 0;max-width:330px}
+.claim{display:inline-block;margin-top:12px;font-family:Poppins,sans-serif;font-weight:600;font-size:.82rem;color:var(--navy);background:var(--yellow);padding:6px 14px;border-radius:999px}
+.cta{display:flex;align-items:center;justify-content:center;gap:10px;margin-top:18px;min-height:60px;border-radius:16px;background:var(--turq);color:var(--navy);text-decoration:none;font-family:Poppins,sans-serif;font-weight:700;font-size:1.06rem;box-shadow:0 8px 28px rgba(0,194,203,.45)}
+.cta svg,.btn-wa svg{width:22px;height:22px;flex:none}
+.start{margin-top:16px;font-size:.78rem;letter-spacing:2px;text-transform:uppercase;font-weight:700;color:var(--turq)}
+.route{list-style:none;position:relative;padding:8px 16px 8px 16px}
+.route:before{content:"";position:absolute;left:35px;top:20px;bottom:40px;border-left:3px dotted rgba(0,194,203,.55)}
+.step{position:relative;padding-left:52px;margin-bottom:18px}
+.node{position:absolute;left:2px;top:14px;width:38px;height:38px;border-radius:50%;display:grid;place-items:center;font-family:Poppins,sans-serif;font-weight:800;font-size:.85rem;color:var(--deep);background:var(--c);box-shadow:0 0 0 4px var(--deep),0 0 18px var(--c)}
+.card{background:linear-gradient(180deg,rgba(245,245,247,.08),rgba(245,245,247,.04));border:1.5px solid rgba(245,245,247,.14);border-radius:18px;padding:14px}
+.ch{display:flex;align-items:center;gap:12px}
+.ico{width:40px;height:40px;flex:none;border-radius:12px;display:grid;place-items:center;color:var(--c);background:color-mix(in srgb,var(--c) 18%,transparent);border:1px solid color-mix(in srgb,var(--c) 45%,transparent)}
+.ico svg{width:22px;height:22px}
+.lvl{font-size:.72rem;letter-spacing:1.6px;text-transform:uppercase;font-weight:700;color:var(--c)}
+h2{font-family:Poppins,sans-serif;font-size:1.12rem;font-weight:700;line-height:1.2}
+.desc{font-size:.93rem;opacity:.85;margin:8px 0 10px;line-height:1.4}
+.btns{display:flex;flex-direction:column;gap:8px}
+.btn{display:flex;align-items:center;justify-content:space-between;gap:10px;min-height:50px;padding:12px 14px;border-radius:12px;text-decoration:none;font-family:Poppins,sans-serif;font-weight:600;font-size:.94rem;background:rgba(24,33,47,.75);border:1.5px solid rgba(245,245,247,.16);transition:transform .15s,border-color .15s,background .15s}
+.btn:hover,.btn:focus-visible{border-color:var(--c);background:rgba(0,0,0,.25);transform:translateX(3px);outline:none}
+.arr{width:18px;height:18px;flex:none;color:var(--c)}
+.btn-wa{justify-content:center;background:var(--turq);color:var(--navy);border-color:var(--turq);font-weight:700}
+.btn-wa:hover,.btn-wa:focus-visible{background:#19d3db;transform:none}
+.goal{margin:6px 16px 0;padding:22px 18px;border-radius:20px;text-align:center;background:radial-gradient(circle at 50% 0%,rgba(255,199,0,.18),transparent 60%),linear-gradient(160deg,#25344c,#1a2433);border:1.5px solid rgba(255,199,0,.35)}
+.goal .pin{width:40px;height:40px;margin:0 auto 8px;color:var(--yellow);filter:drop-shadow(0 0 10px rgba(255,199,0,.6))}
+.goal h2{font-size:1.35rem}.goal h2 span{color:var(--yellow)}
+.contact{list-style:none;margin-top:14px;display:flex;flex-direction:column;gap:8px;font-size:.95rem}
+.contact a,.contact li>span{display:flex;align-items:center;justify-content:center;gap:8px;min-height:44px;text-decoration:none}
+.contact svg{width:18px;height:18px;color:var(--turq);flex:none}
+.social{display:flex;flex-wrap:wrap;justify-content:center;gap:12px;margin-top:24px}
+.social a{width:48px;height:48px;border-radius:50%;display:grid;place-items:center;color:var(--light);background:rgba(245,245,247,.08);border:1.5px solid rgba(245,245,247,.15);transition:.15s}
 .social a:hover,.social a:focus-visible{color:var(--navy);background:var(--yellow);border-color:var(--yellow);outline:none}
 .social svg{width:20px;height:20px;fill:currentColor}
-footer{margin-top:34px;font-size:.8rem;opacity:.6;line-height:1.6}
-footer a{color:inherit}
-.accent{display:flex;gap:6px;margin-top:22px}.accent i{display:block;height:4px;width:28px;border-radius:2px}
+footer{margin-top:22px;padding-bottom:calc(26px + env(safe-area-inset-bottom));text-align:center;font-size:.8rem;opacity:.6}
+@media (prefers-reduced-motion:no-preference){.glow{animation:pulse 3s ease-in-out infinite}.dash{animation:dash 6s linear infinite}}
+@keyframes pulse{50%{opacity:.35}}@keyframes dash{to{stroke-dashoffset:-40}}
 </style>
 <!-- Meta Pixel Code -->
 <script>
@@ -66,36 +86,34 @@ fbq('init','1235943418621534');fbq('track','PageView');
 <!-- End Meta Pixel Code -->
 </head>
 <body>
-<main class="wrap">
-  <img class="logo" src="assets/logo.jpg" width="112" height="112" alt="Logo La Ruta Creativa">
-  <h1>La Ruta Creativa</h1>
-  <p class="tagline">Agencia de Publicidad y Marketing Digital en Villavicencio</p>
-  <span class="claim">Contenido que no parece anuncios y vende 💰</span>
-  <div class="accent" aria-hidden="true"><i style="background:var(--turq)"></i><i style="background:var(--yellow)"></i><i style="background:var(--pink)"></i></div>
-
-  <nav class="links" aria-label="Enlaces">
-    <a class="btn btn-main" href="https://wa.me/573193305498?text=Hola%2C%20vengo%20de%20Instagram" target="_blank" rel="noopener">
-      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.21 3.08c.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.63.71.23 1.36.19 1.87.12.57-.09 1.76-.72 2.01-1.41.25-.7.25-1.29.17-1.41-.07-.13-.27-.2-.57-.35zM12.04 21.5h-.01a9.45 9.45 0 0 1-4.82-1.32l-.35-.2-3.58.94.96-3.49-.23-.36a9.43 9.43 0 0 1-1.45-5.03c0-5.22 4.25-9.47 9.48-9.47 2.53 0 4.91.99 6.7 2.78a9.4 9.4 0 0 1 2.77 6.7c0 5.22-4.25 9.46-9.47 9.46zm8.06-17.53A11.33 11.33 0 0 0 12.04.63C5.76.63.65 5.74.65 12.02c0 2.01.52 3.97 1.52 5.69L.55 23.6l6.04-1.58a11.38 11.38 0 0 0 5.44 1.39h.01c6.28 0 11.39-5.11 11.39-11.39 0-3.04-1.18-5.9-3.33-8.05z"/></svg>
-      Escríbenos por WhatsApp
-    </a>
-
-    <p class="label">Nuestro trabajo</p>
-    <a class="btn" href="https://larutacreativa.com/trabajos-realizados/">Trabajos realizados</a>
-    <a class="btn" href="https://larutacreativa.com/agencia/">Conoce la agencia</a>
-
-    <p class="label">Servicios</p>
-    <a class="btn" href="https://larutacreativa.com/manejo-redes-sociales-villavicencio/">Manejo de redes sociales</a>
-    <a class="btn" href="https://larutacreativa.com/meta-ads-villavicencio/">Publicidad en Facebook e Instagram (Meta Ads)</a>
-    <a class="btn" href="https://larutacreativa.com/google-ads-villavicencio/">Google Ads</a>
-    <a class="btn" href="https://larutacreativa.com/creacion-de-contenido-reels/">Creación de contenido y Reels</a>
-    <a class="btn" href="https://larutacreativa.com/diseno-web-villavicencio/">Diseño de páginas web</a>
-    <a class="btn" href="https://larutacreativa.com/seo-villavicencio/">Posicionamiento SEO</a>
-
-    <p class="label">Aprende</p>
-    <a class="btn" href="https://larutacreativa.com/blog/">Blog de marketing</a>
-  </nav>
-
-  <div class="social" aria-label="Redes sociales">
+<div class="wrap">
+<header>
+<svg class="scene" viewBox="0 0 390 420" preserveAspectRatio="xMidYMax slice" aria-hidden="true">
+<circle class="glow" cx="330" cy="60" r="2" fill="#FFC700"/><circle class="glow" cx="50" cy="90" r="1.6" fill="#F5F5F7"/><circle cx="270" cy="30" r="1.3" fill="#F5F5F7" opacity=".7"/><circle class="glow" cx="120" cy="40" r="1.4" fill="#00C2CB"/><circle cx="360" cy="140" r="1.2" fill="#F5F5F7" opacity=".6"/>
+<path d="M0 300 L60 220 L105 265 L170 180 L230 255 L285 200 L345 250 L390 215 V420 H0Z" fill="#24486a" opacity=".7"/>
+<path d="M150 192 L170 180 L186 200 Z M270 212 L285 200 L298 214Z" fill="#F5F5F7" opacity=".18"/>
+<path d="M0 340 L80 280 L140 320 L215 265 L300 325 L390 285 V420 H0Z" fill="#1c3550" opacity=".9"/>
+<path class="dash" d="M195 420 C 195 380, 120 370, 150 340 S 260 320, 230 290" stroke="#00C2CB" stroke-width="3" fill="none" stroke-dasharray="2 8" stroke-linecap="round" opacity=".55"/>
+</svg>
+<img class="logo" src="assets/logo.png" width="96" height="96" alt="Logo La Ruta Creativa">
+<h1>La Ruta Creativa</h1>
+<p class="tag">Agencia de Publicidad y Marketing Digital en Villavicencio</p>
+<span class="claim">Contenido que no parece anuncios y vende 💰</span>
+<a class="cta" href="https://wa.me/573193305498?text=Hola%2C%20vengo%20de%20Instagram" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.21 3.08c.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.63.71.23 1.36.19 1.87.12.57-.09 1.76-.72 2.01-1.41.25-.7.25-1.29.17-1.41-.07-.13-.27-.2-.57-.35zM12.04 21.5h-.01a9.45 9.45 0 0 1-4.82-1.32l-.35-.2-3.58.94.96-3.49-.23-.36a9.43 9.43 0 0 1-1.45-5.03c0-5.22 4.25-9.47 9.48-9.47 2.53 0 4.91.99 6.7 2.78a9.4 9.4 0 0 1 2.77 6.7c0 5.22-4.25 9.46-9.47 9.46zm8.06-17.53A11.33 11.33 0 0 0 12.04.63C5.76.63.65 5.74.65 12.02c0 2.01.52 3.97 1.52 5.69L.55 23.6l6.04-1.58a11.38 11.38 0 0 0 5.44 1.39h.01c6.28 0 11.39-5.11 11.39-11.39 0-3.04-1.18-5.9-3.33-8.05z"/></svg>Escríbenos por WhatsApp</a>
+<p class="start">↓ Empieza la ruta</p>
+</header>
+<main>
+<ol class="route"><li class="step" style="--c:#00C2CB"><span class="node">01</span><div class="card"><div class="ch"><span class="ico" style="--c:#00C2CB"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 21V4m0 0h11l-2 4 2 4H5"/></svg></span><div><p class="lvl">Paso 1</p><h2>Conoce la agencia</h2></div></div><p class="desc">Quiénes somos y cómo hacemos crecer marcas en el Llano.</p><div class="btns"><a class="btn" href="https://larutacreativa.com/agencia/">Conoce la agencia<svg class="arr" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></a></div></div></li><li class="step" style="--c:#FFC700"><span class="node">02</span><div class="card"><div class="ch"><span class="ico" style="--c:#FFC700"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1L3.2 9.5l6.1-.9z"/></svg></span><div><p class="lvl">Paso 2</p><h2>Nuestro trabajo</h2></div></div><p class="desc">Marcas que nos confiaron su crecimiento.</p><div class="btns"><a class="btn" href="https://larutacreativa.com/trabajos-realizados/">Trabajos realizados<svg class="arr" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></a></div></div></li><li class="step" style="--c:#7C8CFF"><span class="node">03</span><div class="card"><div class="ch"><span class="ico" style="--c:#7C8CFF"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 15c-1.5 1.5-2 5-2 5s3.5-.5 5-2m-1-4 4 4m-4-4 2.5-5.5C11.5 4.5 16 3 21 3c0 5-1.5 9.5-6.5 11.5L9 17m6-8h.01"/></svg></span><div><p class="lvl">Paso 3</p><h2>Servicios</h2></div></div><p class="desc">Elige la ruta que necesita tu negocio.</p><div class="btns"><a class="btn" href="https://larutacreativa.com/manejo-redes-sociales-villavicencio/">Manejo de redes sociales<svg class="arr" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></a><a class="btn" href="https://larutacreativa.com/meta-ads-villavicencio/">Publicidad en Facebook e Instagram (Meta Ads)<svg class="arr" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></a><a class="btn" href="https://larutacreativa.com/google-ads-villavicencio/">Google Ads<svg class="arr" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></a><a class="btn" href="https://larutacreativa.com/creacion-de-contenido-reels/">Creación de contenido y Reels<svg class="arr" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></a><a class="btn" href="https://larutacreativa.com/diseno-web-villavicencio/">Diseño de páginas web<svg class="arr" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></a><a class="btn" href="https://larutacreativa.com/seo-villavicencio/">Posicionamiento SEO<svg class="arr" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></a></div></div></li><li class="step" style="--c:#3DDC97"><span class="node">04</span><div class="card"><div class="ch"><span class="ico" style="--c:#3DDC97"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5a2 2 0 0 1 2-2h13v16H6a2 2 0 0 0-2 2V5zm0 16a2 2 0 0 1 2-2h13v2"/></svg></span><div><p class="lvl">Paso 4</p><h2>Aprende</h2></div></div><p class="desc">Ideas y guías de marketing para tu negocio.</p><div class="btns"><a class="btn" href="https://larutacreativa.com/blog/">Blog de marketing<svg class="arr" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></a></div></div></li><li class="step" style="--c:#E8336E"><span class="node">05</span><div class="card"><div class="ch"><span class="ico" style="--c:#E8336E"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12z"/></svg></span><div><p class="lvl">Paso 5</p><h2>Hablemos</h2></div></div><p class="desc">Cuéntanos tu objetivo y trazamos el camino.</p><div class="btns"><a class="btn btn-wa" href="https://wa.me/573193305498?text=Hola%2C%20vengo%20de%20Instagram" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.21 3.08c.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.63.71.23 1.36.19 1.87.12.57-.09 1.76-.72 2.01-1.41.25-.7.25-1.29.17-1.41-.07-.13-.27-.2-.57-.35zM12.04 21.5h-.01a9.45 9.45 0 0 1-4.82-1.32l-.35-.2-3.58.94.96-3.49-.23-.36a9.43 9.43 0 0 1-1.45-5.03c0-5.22 4.25-9.47 9.48-9.47 2.53 0 4.91.99 6.7 2.78a9.4 9.4 0 0 1 2.77 6.7c0 5.22-4.25 9.46-9.47 9.46zm8.06-17.53A11.33 11.33 0 0 0 12.04.63C5.76.63.65 5.74.65 12.02c0 2.01.52 3.97 1.52 5.69L.55 23.6l6.04-1.58a11.38 11.38 0 0 0 5.44 1.39h.01c6.28 0 11.39-5.11 11.39-11.39 0-3.04-1.18-5.9-3.33-8.05z"/></svg>Escríbenos por WhatsApp</a></div></div></li></ol>
+<section class="goal">
+<svg class="pin" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>
+<h2>Creemos la próxima <span>ruta</span> de tu marca</h2>
+<ul class="contact">
+<li><a href="https://wa.me/573193305498?text=Hola%2C%20vengo%20de%20Instagram" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" style="color:#00C2CB"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.21 3.08c.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.63.71.23 1.36.19 1.87.12.57-.09 1.76-.72 2.01-1.41.25-.7.25-1.29.17-1.41-.07-.13-.27-.2-.57-.35zM12.04 21.5h-.01a9.45 9.45 0 0 1-4.82-1.32l-.35-.2-3.58.94.96-3.49-.23-.36a9.43 9.43 0 0 1-1.45-5.03c0-5.22 4.25-9.47 9.48-9.47 2.53 0 4.91.99 6.7 2.78a9.4 9.4 0 0 1 2.77 6.7c0 5.22-4.25 9.46-9.47 9.46zm8.06-17.53A11.33 11.33 0 0 0 12.04.63C5.76.63.65 5.74.65 12.02c0 2.01.52 3.97 1.52 5.69L.55 23.6l6.04-1.58a11.38 11.38 0 0 0 5.44 1.39h.01c6.28 0 11.39-5.11 11.39-11.39 0-3.04-1.18-5.9-3.33-8.05z"/></svg>+57 319 330 5498</a></li>
+<li><a href="mailto:hola@larutacreativa.com"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4.24-8 5-8-5V6l8 5 8-5v2.24z"/></svg>hola@larutacreativa.com</a></li>
+<li><span><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>Villavicencio, Meta · Colombia</span></li>
+</ul>
+</section>
+<div class="social" aria-label="Redes sociales">
     <a href="https://www.instagram.com/larutacreativaa/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41a3.7 3.7 0 0 1-1.38-.9 3.7 3.7 0 0 1-.9-1.38c-.16-.42-.36-1.06-.41-2.23C2.17 15.58 2.16 15.2 2.16 12s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41C8.42 2.17 8.8 2.16 12 2.16M12 0C8.74 0 8.33.01 7.05.07 5.78.13 4.9.33 4.14.63c-.79.31-1.46.72-2.13 1.38A5.9 5.9 0 0 0 .63 4.14C.33 4.9.13 5.78.07 7.05.01 8.33 0 8.74 0 12s.01 3.67.07 4.95c.06 1.27.26 2.15.56 2.91.31.79.72 1.46 1.38 2.13a5.9 5.9 0 0 0 2.13 1.38c.76.3 1.64.5 2.91.56C8.33 23.99 8.74 24 12 24s3.67-.01 4.95-.07c1.27-.06 2.15-.26 2.91-.56a5.9 5.9 0 0 0 2.13-1.38 5.9 5.9 0 0 0 1.38-2.13c.3-.76.5-1.64.56-2.91.06-1.28.07-1.69.07-4.95s-.01-3.67-.07-4.95c-.06-1.27-.26-2.15-.56-2.91a5.9 5.9 0 0 0-1.38-2.13A5.9 5.9 0 0 0 19.86.63C19.1.33 18.22.13 16.95.07 15.67.01 15.26 0 12 0zm0 5.84a6.16 6.16 0 1 0 0 12.32 6.16 6.16 0 0 0 0-12.32zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.4-11.85a1.44 1.44 0 1 0 0 2.88 1.44 1.44 0 0 0 0-2.88z"/></svg></a>
     <a href="https://www.tiktok.com/@larutacreativaa" target="_blank" rel="noopener" aria-label="TikTok"><svg viewBox="0 0 24 24"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64c.3 0 .59.04.86.13V9.4a6.33 6.33 0 0 0-.86-.06A6.34 6.34 0 0 0 3.15 15.7a6.34 6.34 0 0 0 10.86 4.44 6.3 6.3 0 0 0 1.81-4.44V8.73a8.16 8.16 0 0 0 4.77 1.52V6.8a4.85 4.85 0 0 1-1-.11z"/></svg></a>
     <a href="https://www.facebook.com/larutacreativaa" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M24 12.07C24 5.41 18.63 0 12 0S0 5.4 0 12.07C0 18.1 4.39 23.1 10.13 24v-8.44H7.08v-3.49h3.04V9.41c0-3.02 1.8-4.7 4.54-4.7 1.31 0 2.68.24 2.68.24v2.97h-1.5c-1.5 0-1.96.93-1.96 1.89v2.26h3.33l-.53 3.5h-2.8V24C19.62 23.1 24 18.1 24 12.07z"/></svg></a>
@@ -103,12 +121,9 @@ fbq('init','1235943418621534');fbq('track','PageView');
     <a href="https://www.linkedin.com/in/okzabala/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg></a>
     <a href="mailto:hola@larutacreativa.com" aria-label="Correo electrónico"><svg viewBox="0 0 24 24"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4.24-8 5-8-5V6l8 5 8-5v2.24z"/></svg></a>
   </div>
-
-  <footer>
-    <p>📍 Villavicencio, Meta · Colombia</p>
-    <p>© <span id="y">2026</span> <a href="https://larutacreativa.com/">larutacreativa.com</a></p>
-  </footer>
 </main>
+<footer><p>© <span id="y">2026</span> <a href="https://larutacreativa.com/">larutacreativa.com</a></p></footer>
+</div>
 <script>document.getElementById('y').textContent=new Date().getFullYear();</script>
 </body>
 </html>
